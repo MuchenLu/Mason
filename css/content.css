@@ -161,4 +161,30 @@
         font-size: 24px;
         left: 5%;
     }
+
+    .index-content-area {
+        width: 100%;
+        height: 1200px;
+        position: relative;
+        top: 700px;
+        left: 0px;
+        background-color: #000000;
+    }
+
+    .index-content-title {
+        left: 10%;
+    }
+
+    .index-content-text {
+        padding: 20px;
+    }
+
+    .addmission-content-text {
+        width: 80%;
+        padding: 20px;
+    }
+
+    .addmission-content-area {
+        height: 3000px;
+    }
 }

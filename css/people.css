@@ -64,3 +64,9 @@
     display: block;
     width: 15%;
 }
+
+@media (max-width: 768px) {
+    .people-picture img {
+        width: 50%
+    }
+}

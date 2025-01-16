@@ -30,6 +30,18 @@
     text-align: center;
 }
 
+.nav-item-now {
+    color: #7e7e7e;
+    text-decoration: none;
+    font-family: Noto Sans TC;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 12px;
+    transition: opacity 0.3s ease;
+    line-height: 1; 
+    text-align: center;
+}
+
 .dropdown {
     position: relative;
     display: flex;
@@ -101,7 +113,7 @@
         display: none; /* 預設隱藏 */
         flex-direction: column;
         width: 100%; /* 佔滿全寬 */
-        position: fixed; /* 改成絕對定位 */
+        position: absolute; /* 改成絕對定位 */
         top: 75px; /* 距離頂部 */
         left: 0; /* 靠右 */
         background: black; /* 背景顏色 */
@@ -110,5 +122,10 @@
 
     .hamburger {
         display: flex; /* 漢堡選單顯示 */
+    }
+
+    .dropdown-content {
+        top: 0;
+        left: 100%;
     }
 }
