@@ -9,14 +9,14 @@ body {
 }
 
 .logo {
-    position: fixed;
+    position: absolute;
     top: 38px;
     left: 40px;
     z-index: 1000;
     text-decoration: none;
     background: none;
     border: none;
-    display: block;
+    display: flex;
   }
   
 .logo img {
@@ -41,15 +41,17 @@ body {
 }
 
 .header-area {
+    display: flex;
     width: 100% !important;
     height: 120px;
     background: rgba(255, 255, 255, 0.7);
     backdrop-filter: blur(10px);
     opacity: 1;
-    position: fixed;
+    position: absolute;
     top: 0px;
     left: 0px;
     z-index: 100;
+    flex-wrap: wrap;
 }
 
 .header-area-noo {
