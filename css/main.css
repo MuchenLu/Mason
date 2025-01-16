@@ -11,7 +11,7 @@ body {
 .logo {
     position: fixed;
     top: 38px;
-    left: 60px;
+    left: 40px;
     z-index: 1000;
     text-decoration: none;
     background: none;
@@ -41,7 +41,7 @@ body {
 }
 
 .header-area {
-    width: 100%;
+    width: 100% !important;
     height: 120px;
     background: rgba(255, 255, 255, 0.7);
     backdrop-filter: blur(10px);
@@ -106,3 +106,9 @@ body {
   .arrow-down.visible {
     opacity: 1;
   }
+
+@media (max-width: 768px) {
+    .logo {
+        top: 10px;
+    }
+}

@@ -11,16 +11,44 @@
     <link href="css/nav.css" rel="stylesheet">
     <link href="css/introduction.css" rel="stylesheet">
     <link href="css/people.css" rel="stylesheet">
+    <script>
+        function ShowAndHide() {
+            if (window.innerWidth <= 769) {
+                var nav = document.querySelector('.nav');
+                if (nav.style.display === 'none') {
+                    nav.style.display = 'flex';
+                } else {
+                    nav.style.display = 'none';
+                }
+            }
+        }
+
+        function UpdateMenu() {
+            var nav = document.querySelector('.nav');
+            if (window.matchMedia("(min-width: 769px)").matches) {
+            nav.style.display = 'flex';
+            }
+            else {
+                nav.style.display = 'none';
+            }
+        }
+        
+    window.addEventListener("resize", UpdateMenu)
+    </script>
 </head>
 
 <body>
     <!--頁首區塊標籤-->
     <div class="header-area">
         <!--logo 標籤-->
-        <div class="logo-block">
+        <div class="top-info">
             <a href="index.html" class="logo">
                 <img src="images/logo.png" alt="T-School Logo">
             </a>
+            <!--導覽列標籤-->
+            <div class = "hamburger" id = "hamburger">
+                <img src = "images/burger.png" onclick = "ShowAndHide()">
+            </div>
         </div>
         <!--導覽列標籤-->
         <div class="nav">
